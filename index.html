@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="refresh" content="1">
+</head>
+
+<body>
+    <h3> New York Time </h3>
+    <p id="date"></p>
+
+    <script>
+        var d = new Date();
+        const est_options = {timeZone:"America/New_York"}
+        document.getElementById("date").innerHTML = d.toLocaleString( {}, est_options );
+    </script>
+
+</body>
+
+</html>
