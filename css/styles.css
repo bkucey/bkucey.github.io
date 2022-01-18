@@ -9,3 +9,12 @@ h1{
 td:hover {
     background-color:gold;
 }
+
+td{
+     /* Centering things article from w3c 
+    https://www.w3.org/Style/Examples/007/center.en.html
+    */ 
+
+    text-align:center;
+    border:1px solid;
+}
