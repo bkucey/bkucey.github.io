@@ -1,0 +1,34 @@
+<html>
+
+<head>
+
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        #main {
+            height: 50%;
+            width: 50%;
+            margin: auto;
+            background-color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="main">Click This</div>
+    <div id="output"></div>
+    <script>
+        const mainElement = document.querySelector(`#main`);
+        const outputElement = document.querySelector(`#output`);
+        mainElement.onclick = (e) =>
+        {
+            outputElement.before(`You clicked the box , we have these details:${JSON.stringify(e)}. `);
+        };
+    </script>
+</body>
+
+</html>
